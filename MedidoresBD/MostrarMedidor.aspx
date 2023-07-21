@@ -7,7 +7,10 @@
     <div class="container">
         <h2>Mostrar Medidor</h2>
         <asp:GridView ID="gridMedidores" runat="server" CssClass="table table-striped">
-            <!-- Agrega aquí las columnas del GridView -->
+            <Columns>
+                <asp:BoundField DataField="numeroSerie" HeaderText="Numero de Serie"/>
+                <asp:BoundField DataField="tipo" HeaderText="Tipo" />
+            </Columns>
         </asp:GridView>
     </div>
 </asp:Content>
